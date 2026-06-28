@@ -1,0 +1,127 @@
+p{
+    font-family: Roboto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #374151;
+}
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    color: #232F3E;
+}
+.contain{
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+.introduction{
+    background: linear-gradient(
+        135deg,
+        rgb(35, 47, 62),
+        #374151
+    );
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    flex: 1;
+    padding: 30px;
+    margin-bottom:40px;
+    max-width: 1600px;
+}
+.introduction p{
+    color: #E5E7EB;
+    font-size: 18px;
+    line-height: 1.8;
+}
+.introduction .title{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.text{
+    background-color: #F8FAFC;
+    padding: 50px;
+    line-height: 1.8;
+    flex: 2;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #232F3E;
+    max-width: 900px;
+}
+.degreeapp,
+.ucas,
+.pic{
+    flex: 1;
+    overflow: hidden;
+}
+.section-type-1{
+    padding-top: 35px;
+    text-align: center;
+    display: flex;
+    line-height: 23px;
+    margin-bottom: 60px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.hear-from{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    line-height: 35px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #232F3E;
+    line-height: 27px;
+}
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+    margin-top: 0px;
+    font-family: Roboto;
+}
+body{
+    height: 2550px;
+    padding-bottom: 50px;
+    padding-top: 150px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.7;
+}
+.flexg{
+    display: flex;
+}
+.ucas,
+.degreeapp,
+.text,
+.pic,
+.introduction,
+.hear-from{
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-radius: 12px;
+}
+.subtitle{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.pic img{
+    object-fit:cover;
+    border-radius: 12px;
+    max-width: 600px;
+    max-height: 600px;
+}
+.ucas{
+    max-width: 500px;
+    max-height: 300px;  
+}
+.degreeapp{
+    max-width: 600px;
+    max-height: 400px;  
+    margin-left: auto;
+    margin-right: auto;
+}
