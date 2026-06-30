@@ -1,0 +1,55 @@
+import re
+
+T_LEVEL_KNOWLEDGE_BASE = {
+    "digital_production": {
+        "title": "Digital Production, Design, and Development",
+        "keywords": ["coding", "programming", "software", "python", "games", "websites", "development", "code"],
+        "rationale": "Your interest in building software, coding, and creating digital products directly aligns with Digital Production, Design, and Development."
+    },
+    "digital_support": {
+        "title": "Digital Support Services",
+        "keywords": ["hardware", "networking", "cybersecurity", "servers", "infrastructure", "it support", "security"],
+        "rationale": "Your interest in managing computer hardware, setting up secure networks, and troubleshooting infrastructure maps perfectly onto Digital Support Services."
+    }
+}
+
+def process_chat_message(user_message):
+    if len(user_message) > 300:
+        return "Your message is too long! Please keep it under 300 characters."
+
+    sanitized = re.sub(r'[^\w\s\s?]', '', user_message).lower()
+    
+    matched_pathway = None
+    highest_score = 0
+    chosen_rationale = "Tell me what hobbies or subjects you enjoy (like coding, software, or computer hardware)."
+
+    for key, pathway in T_LEVEL_KNOWLEDGE_BASE.items():
+        score = 0
+        for keyword in pathway["keywords"]:
+            if keyword in sanitized:
+                score += 35  
+                
+        if score > highest_score:
+            highest_score = min(score, 100)  
+            matched_pathway = pathway["title"]
+            chosen_rationale = pathway["rationale"]
+
+    return {
+        "reply": chosen_rationale,
+        "alignment_score": f"{highest_score}%",
+        "pathway": matched_pathway
+    }
+
+if __name__ == "__main__":
+    print("--- Amazon T Level AI Chatbot Local Test Console ---")
+    print("Please enter one of the following topics to see how your interests align with Amazon T Level pathways: coding, programming, software, python, games, websites, development, code, hardware, networking, cybersecurity, servers, infrastructure, it support, security.\n")    
+    print("Type 'exit' to quit.\n")
+    
+while True:
+        user_input = input("You: ")
+        if user_input.lower() == 'exit':
+            break
+            
+        response = process_chat_message(user_input)
+        
+        print(f"Chatbot output: {response['reply']}\n")
