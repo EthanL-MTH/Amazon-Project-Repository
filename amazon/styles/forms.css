@@ -1,0 +1,142 @@
+.title{
+    text-align:center;
+    font-size:40px;
+    font-weight:bold;
+    margin:40px 0;
+    color:#232f3e;
+}
+.form-title{
+    font-size:28px;
+    font-weight:600;
+    color:#ff9900;
+    margin-bottom:30px;
+}
+.privacy-info{
+
+    background:white;
+
+    max-width:900px;
+
+    margin:60px auto;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+.form{
+    margin-bottom: 50px;
+    max-width: 950px;
+    margin: 40px auto;
+    background-color: white;
+
+    border-radius: 16px;
+    padding: 40px;
+
+    border: 1px solid #ddd;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+}
+.form p{
+
+    margin-top:25px;
+    margin-bottom:12px;
+
+    font-weight:600;
+}
+body{
+    padding-left: 50px;
+    background-color: #f4f6f9;
+    color: #333;
+    padding-top: 140px;
+    padding-bottom: 40px;
+    margin: 0;
+    font-family:"Poppins", sans-serif;
+}
+.big-text-box{
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px;
+    resize: none;
+    flex: 1;
+}
+.little-text-box{
+    max-width: 600px;
+    border-radius: 10px;
+}
+body{
+    padding-bottom: 20px;
+}
+.submit-button{ 
+    width: 10vw;
+    height: 6vh;
+    max-width: 160px;
+
+    background:#ff9900;
+    color:white;
+
+    border:none;
+    border-radius:30px;
+
+    padding:15px 35px;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.25s;
+}
+.submit-button:hover{
+
+    background:#e68900;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+.container-for-textbox{
+  display: flex;
+  max-width: 800px;
+}
+
+.little-text-box,
+.big-text-box{
+
+    width:100%;
+    border:1px solid #d5d5d5;
+    border-radius:10px;
+
+    padding:14px;
+
+    font-size:16px;
+
+    transition:0.2s;
+}
+.little-text-box:focus,
+.big-text-box:focus{
+
+    outline:none;
+
+    border-color:#ff9900;
+
+    box-shadow:0 0 8px rgba(255,153,0,.3);
+}
+.page{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:20px;
+}
+a:focus,
+button:focus,
+input:focus{
+    outline: 3px solid blue;
+    outline-offset: 3px;
+}

@@ -1,0 +1,87 @@
+.title{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+a,
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 26px;
+}
+body{
+    font-family: Roboto, Arial, sans-serif;
+    padding:160px 5vw 50px;
+    text-align:center;
+    max-width:1400px;
+    margin:0 auto;
+    padding-top: 200px;
+}
+.introduction{
+    border:1px solid #444;
+    padding:30px;
+    margin-bottom:40px;
+}
+.red{
+    color: red;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    gap:20px;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+.card{
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:25px;
+    background:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    min-height:140px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    transition:transform .2s ease, box-shadow .2s ease;
+
+}
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+.card h3{
+    margin:0 0 20px;
+    line-height:1.4;
+    font-size:20px;
+    font-weight:500;
+}
+
+.card a{
+    align-self:center;
+
+    padding:10px 20px;
+    background:#0056b3;
+    color:white;
+    text-decoration:none;
+
+    border-radius:6px;
+    transition:background .2s ease;
+}
+
+.card a:hover{
+    background:#003f82;
+}
+.download{
+    text-decoration: underline;
+    padding:10px 20px;
+    color:#0056b3;
+}
+a:focus,
+button:focus,
+input:focus{
+    outline: 3px solid blue;
+    outline-offset: 3px;
+}

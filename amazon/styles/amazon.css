@@ -1,0 +1,114 @@
+a,
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.title{
+    margin-top: 20px;
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.introduction{
+    text-align: center;
+    background: linear-gradient(135deg,#146eb4,#232f3e);
+    color:white;
+    padding:80px 30px;
+    border:none;
+    border-radius:15px;
+    margin-bottom:40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+    margin-top: 0px;
+}
+body{
+    background-color: #f4f6f8;
+    color:#333;
+    padding:140px 30px 60px;
+    font-family:Roboto,sans-serif;
+}
+.recruitment,
+.hear-from,
+.supported-intern,
+.youth,
+.why-amazon,
+.what-are-they{
+    text-align: center;
+    line-height: 35px;
+    background: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 40px;
+    transition:.3s;
+    max-width:900px;
+    margin:30px auto;
+
+}
+.recruitment:hover,
+.supported-intern:hover,
+.youth:hover,
+.why-amazon:hover,
+.what-are-they:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+.hear-from{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background:#fafafa;
+    border-left:6px solid #ff9900;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+.student-pic{
+    width:100%;
+    border-radius:12px;
+}
+.contain-intern{
+    width: 500px;
+    margin-left: 20px;
+}
+.make-inline{
+    display: inline-block;
+    flex: 1;
+    max-width: 900px;
+}
+.hear-from-with-pic{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.link{
+    color:#146eb4;
+    text-decoration:none;
+    font-weight:500;
+}
+.link:hover{
+    text-decoration:underline;
+}
+h2{
+    color:#232f3e;
+}
+.intro-text{
+    display: inline-block;
+    margin-right: 30px;
+}
+.percentage{
+    color: #FF9900;
+}
+.logo{
+    max-width: 400px;
+    max-height: 300px;
+}
+a:focus,
+button:focus,
+input:focus{
+    outline: 3px solid blue;
+    outline-offset: 3px;
+}

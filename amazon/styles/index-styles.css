@@ -1,0 +1,141 @@
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height:1.8;
+    color:#374151;
+}
+.title{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:25px;
+    color: #232F3E;
+}
+.introduction{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #232F3E;
+}
+.t-level-courses,
+.hear-from-more,
+.hear-from,
+.why-choose-them,
+.what-are-they{
+    padding: 60px 80px;
+    text-align: center;
+    line-height: 35px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #232F3E;
+    background-color: var(--secondary);
+    color: var(--text);
+}
+.opportunites,
+.facts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+    text-align: center;
+}
+.why-drop,
+.section{
+    padding:30px;
+    line-height: 23px;
+    border-radius:12px;
+    background-color: white;
+    border:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+    margin-top: 0px;
+    font-family: Roboto;
+    color:#374151;
+}
+.student-pic{
+    border-radius:15px;
+    object-fit:cover;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    width: 300px;
+    height: 300px;
+}
+body{
+    font-family: Roboto;
+    height: 2500px;
+    padding-bottom: 50px;
+    padding-top: 190px;
+}
+.gridb{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 30px;
+    line-height: 35px;
+    margin-bottom: 5px;
+}
+.grid-box{
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #232F3E;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+.chart-pass{
+    width: 200px;
+    height: 200px;
+}
+.chart-grades{
+    width: 300px;
+    height: 200px;
+}
+.one-statistic{
+    width: 300px;
+    display: inline-block;
+}
+.statistics{
+    display: flex;
+    line-height: 25px;
+}
+.pass-rates{
+    padding-top: 35px;
+    text-align: center;
+}
+.link{
+    color:#146eb4;
+    text-decoration:underline;
+    font-weight:500;
+}
+.link:hover{
+    text-decoration:underline;
+}
+.difficulty-paragraph{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+.why-drop{
+    display: block;
+}
+:root{
+    --primary:#0f766e;
+    --secondary:#f8fafc;
+    --text:#1f2937;
+    --border:#d1d5db;
+}
+.percentage{
+    color: #FF9900;
+}
+a:focus,
+button:focus,
+input:focus{
+    outline: 3px solid blue;
+    outline-offset: 3px;
+}
